@@ -1,0 +1,53 @@
+:root {
+    /*Colors*/
+    --primary-color: #0D3B66;
+    --secundary-color: #F95738;
+    --white: #FFFFFF;
+    --black: #1A1A1A;
+
+    --secundary-opacity-2:rgba(249, 87, 56, 0.2);
+
+    /*Fonts*/
+    --Gotham-Black-Font: 'Gotham-Black';
+    --Gotham-Thin-Font: 'Gotham-Thin';
+    --Gotham-UltraItalic-Font: 'Gotham-UltraItalic';
+    --GothamBook-Font: 'GothamBook';
+    --GothamMedium-Font: 'GothamMedium';
+    --Montserrat-Bold-Font: 'Montserrat-Bold';
+    --Montserrat-Light-Font: 'Montserrat-Light';
+}
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../assets/fonts/Gotham-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gotham-Thin';
+    src: url('../assets/fonts/Gotham-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gotham-UltraItalic';
+    src: url('../assets/fonts/Gotham-UltraItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../assets/fonts/GothamBook.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../assets/fonts/GothamMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../assets/fonts/Montserrat-Bold_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../assets/fonts/Montserrat-Light_0.ttf') format('truetype');
+}

@@ -1,0 +1,29 @@
+.AboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.AboutUs h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -60px;
+    width: 288px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: var(--Gotham-Black-Font);
+    font-size: 3.6rem;
+}
+
+.AboutUs p {
+    width: 80%;
+    font-family: var(--GothamBook-Font);
+    font-size: 2rem;
+}
