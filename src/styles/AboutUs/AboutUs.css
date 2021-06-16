@@ -4,8 +4,8 @@
     align-items: center;
     position: relative;
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding-top: 48px;
+    padding-bottom: 60px;
 }
 
 .AboutUs h2 {
@@ -13,17 +13,31 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -60px;
-    width: 288px;
-    height: 60px;
+    top: -28px;
+    padding: 0px 12px;
+    height: 28px;
     background-color: var(--primary-color);
     color: var(--white);
     font-family: var(--Gotham-Black-Font);
-    font-size: 3.6rem;
+    font-size: 1.4rem;
 }
 
 .AboutUs p {
-    width: 80%;
+    max-width: 660px;
     font-family: var(--GothamBook-Font);
-    font-size: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .AboutUs h2 {
+        top: -60px;
+        padding: 0px 40px;
+        height: 60px;
+        font-size: 3.6rem;
+    }
+
+    .AboutUs p {
+        font-size: 2rem;
+    }
 }

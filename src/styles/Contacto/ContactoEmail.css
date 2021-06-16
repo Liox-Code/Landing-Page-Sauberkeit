@@ -1,0 +1,57 @@
+.contacto-email {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.email-form {
+    display: grid;
+    grid-template-rows: 36px 36px 124px 64px;
+    align-items: center;
+    max-height: 268px;
+}
+
+.email-form > input {
+    padding: 4px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--Gotham-Thin-Font);
+}
+
+.email-form > input::placeholder {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.email-form > textarea {
+    padding: 4px;
+    height: 116px;
+    border-radius: 5px;
+    border: none;
+    font-family: var(--Gotham-Thin-Font);
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.email-form > button {
+    align-self: end;
+    height: 48px;
+    background-color: var(--mustard-color);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--Gotham-Black-Font);
+    font-size: 1.8rem;
+}
+
+@media (min-width: 800px) {
+    .contacto-email {
+        margin-top: 0px;
+        width: 50%;
+    }
+
+    .email-form {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 350px;
+    }
+}

@@ -1,15 +1,17 @@
 import React from 'react';
 
 //Component
-import Portrait from '../components/Portrait/Portrait';
 import AboutUs from '../components/AboutUs/AboutUs';
+import CallContact from '../components/CallContact/CallContact';
+import Servicios from '../components/Servicios/Servicios';
 
 class Home extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <Portrait/>
                 <AboutUs/>
+                <CallContact/>
+                <Servicios/>
             </React.Fragment>
         )
     }

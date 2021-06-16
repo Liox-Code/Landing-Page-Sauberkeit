@@ -1,0 +1,56 @@
+.ServicioItem{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    width: 50%;
+    max-width: 200px;
+}
+
+.ServicioItem img {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.ServicioItem > h2{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: var(--secundary-color);
+    font-family: var(--Gotham-UltraItalic-Font);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.ServicioItem ul{
+    margin-left: 20px;
+}
+
+.ServicioItem li{
+    line-height: 15px;
+    color: var(--primary-color);
+    font-family: var(--GothamMedium-Font);
+    font-size: 1.2rem;
+}
+
+@media (min-width: 800px) {
+    .ServicioItem{
+        padding: 0 10px;
+        margin-bottom: 68px;
+        max-width: 300px;
+    }
+
+    .ServicioItem img {
+        height: 148px;
+    }
+
+    .ServicioItem > h2{
+        font-size: 2rem;
+    }
+    
+    .ServicioItem li{
+        line-height: 30px;
+        font-size: 1.8rem;
+    }
+}

@@ -9,6 +9,7 @@
 .footer-container {
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
     width: 100%;
     max-width: 1200px;
     color: var(--white);

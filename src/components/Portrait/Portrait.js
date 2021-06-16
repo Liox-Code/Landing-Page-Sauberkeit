@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Estilos
-import '../../styles/Portrait.css';
+import '../../styles/Portrait/Portrait.css';
 
 //Imagenes
 import portraitImage from '../../assets/static/indexiphone20.png';
