@@ -37,17 +37,6 @@
 .img-button {
     justify-self: center;
     align-self: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 14px;
-    height: 24px;
-    background-color: var(--secundary-color);
-    border-radius: 4px;
-    color: var(--white);
-    font-family: var(--GothamBook-Font);
-    font-size: 1.2rem;
-    text-decoration: none;
 }
 
 @media (min-width: 800px) {
@@ -62,12 +51,5 @@
 
     .img-description {
         font-size: 3.6rem;
-    }
-
-    .img-button {
-        padding: 0 24px;
-        height: 40px;
-        border-radius: 20px;
-        font-size: 2rem;
     }
 }

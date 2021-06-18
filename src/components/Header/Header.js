@@ -5,30 +5,64 @@ import '../../styles/Header/Header.css';
 
 //Iconos
 import { FiMenu } from "react-icons/fi";
+function useWindowsSize() {
+    const [size, setSize] = useState( window.innerWidth );
+    const handleResize = () => setSize( window.innerWidth );
+    useEffect(() => {
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, [])
+    return size;
+}
 
 const Header = () => {
     const [isDisplayed, setIsDisplayed] = useState(false);
+    const width = useWindowsSize();
     return(
         <React.Fragment>
             <div className="header">
-                <nav>
-                    <a 
-                        href="#"
-                        className="menu-icon"
-                        onClick={() => setIsDisplayed(!isDisplayed)}
-                    >
-                        <FiMenu/>
-                    </a>
+                <div className="header-container">
                     {
-                        isDisplayed &&
-                        <ul>
-                            <li><a href='#'>INICIO</a></li>
-                            <li><a href='#'>SERVICIOS</a></li>
-                            <li><a href='#'>NOSOTROS</a></li>
-                            <li><a href='#'>CONTACTANOS</a></li>
-                        </ul>
+                        (width < 800) &&
+                        <React.Fragment>
+                            <FiMenu
+                                className="menu-icon"
+                                onClick={() => setIsDisplayed(!isDisplayed)}
+                            />
+                        </React.Fragment>
                     }
-                </nav>
+                    {
+                        (isDisplayed || width >= 800) &&
+                        <React.Fragment>
+                            <nav>
+                                <a
+                                    className="nav-link"
+                                    href="/#"
+                                >
+                                    INICIO
+                                </a>
+                                <a
+                                    className="nav-link"
+                                    href="/#Servicios"
+                                >
+                                    SERVICIOS
+                                </a>
+                                <a
+                                    className="nav-link"
+                                    href="/#Nosotros"
+                                >
+                                    NOSOTROS
+                                </a>
+                                <a
+                                    className="nav-link"
+                                    href="/#Contactanos"
+                                >
+                                    CONTÁCTANOS
+                                </a>
+                            </nav>
+                        </React.Fragment>
+                    }
+                </div>
             </div>
         </React.Fragment>
     )

@@ -8,12 +8,20 @@
     padding-bottom: 60px;
 }
 
-.AboutUs h2 {
+.AboutUs-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: -98px;
+    height: 98px;
+    pointer-events: none;
+}
+
+.AboutUs-title-container > h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: -28px;
     padding: 0px 12px;
     height: 28px;
     background-color: var(--primary-color);
@@ -22,7 +30,7 @@
     font-size: 1.4rem;
 }
 
-.AboutUs p {
+.AboutUs > p {
     max-width: 660px;
     font-family: var(--GothamBook-Font);
     font-size: 1.2rem;
@@ -30,14 +38,23 @@
 }
 
 @media (min-width: 800px) {
-    .AboutUs h2 {
-        top: -60px;
+    .AboutUs {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .AboutUs-title-container {
+        top: -140px;
+        height: 140px;
+    }
+
+    .AboutUs-title-container > h2 {
         padding: 0px 40px;
         height: 60px;
         font-size: 3.6rem;
     }
 
-    .AboutUs p {
+    .AboutUs > p {
         font-size: 2rem;
     }
 }

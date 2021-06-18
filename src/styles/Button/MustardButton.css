@@ -1,0 +1,58 @@
+.mustard-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background-color: var(--mustard-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--primary-color);
+    font-family: var(--Gotham-Black-Font);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.mustard-btn:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: all .20s;
+}
+
+.mustard-btn > span{
+    z-index: 2;
+}
+
+.mustard-btn:hover{
+    color: var(--mustard-color);
+}
+
+.mustard-btn:hover:after{
+    height: 100%;
+}
+
+@media (min-width: 800px) {
+    .mustard-btn {
+        padding: 0 24px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 2rem;
+    }
+
+    .mustard-btn:after{
+        border-radius: 20px;
+    }
+
+    .mustard-btn:after{
+        height: 100%;
+        width: 0;
+    }
+    
+    .mustard-btn:hover:after{
+        width: 100%;
+    }
+}

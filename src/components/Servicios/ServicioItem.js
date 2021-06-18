@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {useRef} from 'react';
+
+//hooks
+import UseFadeIn from '../../hooks/UseFadeInUp';
 
 //Imagenes
 import ImgFumigacionDesinfeccion from '../../assets/static/Ratones-peleando.jpg';
@@ -7,9 +10,15 @@ import ImgFumigacionDesinfeccion from '../../assets/static/Ratones-peleando.jpg'
 import "../../styles/Servicios/ServicioItem.css";
 
 const ServicioItem = () => {
+    const refServicioItem = useRef();
+    const {opacity, fadeInUp} = UseFadeIn(refServicioItem);
     return(
         <React.Fragment>
-            <div className="ServicioItem">
+            <div 
+                ref={refServicioItem} 
+                className={`ServicioItem ${fadeInUp}`}
+                style={{opacity: opacity}}
+            >
                 <img src={ImgFumigacionDesinfeccion} alt=""/>
                 <h2>FUMIGACIÓN Y DESINFECCIÓN</h2>
                 <ul>

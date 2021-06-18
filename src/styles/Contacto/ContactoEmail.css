@@ -33,14 +33,8 @@
     text-align: justify;
 }
 
-.email-form > button {
+.email-form > a {
     align-self: end;
-    height: 48px;
-    background-color: var(--mustard-color);
-    border: none;
-    border-radius: 5px;
-    font-family: var(--Gotham-Black-Font);
-    font-size: 1.8rem;
 }
 
 @media (min-width: 800px) {

@@ -58,16 +58,10 @@
     font-family: var(--Gotham-Thin-Font);
 }
 
-.call-contact--description > button {
+.call-contact--description > a {
     margin-top: 12px;
-    padding: 0 12px;
     height: 28px;
-    background-color: var(--secundary-color);
-    color: var(--white);
-    font-family: var(--GothamBook-Font);
     font-size: 1.4rem;
-    border: none;
-    border-radius: 4px;
 }
 
 @media (min-width: 800px) {
@@ -91,11 +85,9 @@
     .call-contact--description > p:nth-child(2) {
         font-size: 1.8rem;
     }
-    
-    .call-contact--description > button {
-        padding: 0 24px;
+
+    .call-contact--description > a {
         height: 40px;
-        font-size: 2rem;
-        border-radius: 20px;
+        font-size: 1.8rem;
     }
 }

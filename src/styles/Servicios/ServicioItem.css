@@ -36,9 +36,10 @@
 
 @media (min-width: 800px) {
     .ServicioItem{
-        padding: 0 10px;
+        margin: 0 20px;
+        padding: 0;
         margin-bottom: 68px;
-        max-width: 300px;
+        max-width: 280px;
     }
 
     .ServicioItem img {

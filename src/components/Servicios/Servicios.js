@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {useRef} from 'react';
+
+//hooks
+import UseFadeIn from '../../hooks/UseFadeInUp';
 
 //Componente
 import ServicioItem from './ServicioItem';
@@ -7,11 +10,24 @@ import ServicioItem from './ServicioItem';
 import '../../styles/Servicios/Servicio.css';
 
 const Servicios = () => {
+    const refServicios = useRef();
+    const {opacity, fadeInUp} = UseFadeIn(refServicios);
     return(
         <React.Fragment>
-            <div className="Servicios">
-                <h2>NUESTROS SERVICIOS</h2>
-                <div className='Servicios-Container'>
+            <div
+                className={`Servicios`}
+                id="Servicios"
+            >
+                <h2
+                    ref={refServicios}
+                    className={`${fadeInUp}`}
+                    style={{opacity: opacity}}
+                >
+                    NUESTROS SERVICIOS
+                </h2>
+                <div
+                    className={`Servicios-Container`}
+                >
                     <ServicioItem/>
                     <ServicioItem/>
                     <ServicioItem/>

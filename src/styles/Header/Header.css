@@ -2,49 +2,105 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0px;
     width: 100%;
     background-color: var(--primary-color);
+    z-index: 10;
 }
 
-.header nav {
+.header-container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     max-width: 1200px;
 }
 
 .menu-icon {
-    align-self: flex-end;
-    margin: 20px;
+    margin: 15px 20px;
     font-size: 2rem;
     color: var(--white);
 }
 
-.header ul {
+.header-container > nav {
+    position: absolute;
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 100%;
+    max-width: 200px;
     list-style: none;
 }
 
-.header li{
+.nav-link {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 40px;
-}
-
-.header li a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    background-color: var(--primary-color);
     color: var(--white);
     font-family: var(--GothamBook-Font);
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--mustard-color);
+}
+
+.nav-link::after {
+    position: absolute;
+    top: 8px;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--mustard-color);
+    transition: all 0.2s;
+}
+
+.nav-link:hover:after {
+    width: 20%;
+}
+
+@media (min-width: 800px) {
+    .header-container > nav {
+        position: static;
+        justify-content: flex-end;
+        align-self: flex-end;
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .nav-link {
+        margin: 0 20px;
+        width: auto;
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    .nav-link::after {
+        top: 20px;
+        width: 0;
+        height: 4px;
+    }
+    
+    .nav-link:hover:after {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1220px) {
+
+    .header-container > nav > .nav-link:first-child{
+        margin-left: 0px;
+    }
+
+    .header-container > nav > .nav-link:last-child{
+        margin-right: 0px;
+    }
 }
