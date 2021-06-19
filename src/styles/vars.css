@@ -3,10 +3,13 @@
     --primary-color: #0D3B66;
     --secundary-color: #F95738;
     --mustard-color: #F4D35E;
+    --error-color: #B71C1C;
     --white: #FFFFFF;
     --black: #1A1A1A;
 
+    --primary-opacity-7:rgba(13, 59, 102, 0.7);
     --secundary-opacity-2:rgba(249, 87, 56, 0.2);
+    --mustard-opacity-7:rgba(244, 211, 94, 0.7);
 
     /*Fonts*/
     --Gotham-Black-Font: 'Gotham-Black';

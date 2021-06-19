@@ -9,7 +9,7 @@ const UseFadeInUp = (ref) => {
             // console.log(element.y);
             // console.log(window.innerHeight - element.height);
             if(element.y <= window.innerHeight - element.height / 2){
-                console.log('En vIEWPORT');
+                // console.log('En vIEWPORT');
                 setOpacity(1);
                 setFadeInUp('fadeInUp');
             }
