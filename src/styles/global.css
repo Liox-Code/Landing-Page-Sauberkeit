@@ -10,3 +10,11 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
+.center{
+    justify-self: center;
+}
+
+.margin-top-4{
+    margin-top: 4px;
+}

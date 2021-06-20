@@ -43,7 +43,7 @@ const Portrait = () => {
                             transform: `translateY(-${ offsetY * 0.2}px)`
                         }}
                     >
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                        Limpieza y Fumigación 
                     </h2>
                     <a
                         className={`img-button orange-btn ${fadeInUp}`}

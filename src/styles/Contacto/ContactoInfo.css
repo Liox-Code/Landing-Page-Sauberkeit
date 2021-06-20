@@ -21,15 +21,15 @@
     display: grid;
     justify-items: center;
     align-items: start;
-    grid-template-rows: 40px 40px auto;
+    grid-template-rows: minmax(40px, auto) minmax(40px, auto) auto;
     grid-template-columns: 1fr 1fr;
     margin: 28px 0px;
 }
 
 .contacto-info-item {
     display: flex;
-    align-items: center;
-    height: 15px;
+    align-items: flex-start;
+    min-height: 15px;
 }
 
 .contacto-info-item > span {
@@ -53,6 +53,7 @@
 .icons-container {
     align-self: center;
     grid-column: 1 / 2;
+    grid-row: 3 / 4;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -12,6 +12,7 @@
     font-family: var(--GothamBook-Font);
     font-size: 1.2rem;
     text-decoration: none;
+    outline: none;
 }
 
 .orange-btn::before{
@@ -24,11 +25,16 @@
     transition: all .20s;
 }
 
+.orange-btn:focus {
+    border: 2px solid var(--white);
+}
+
 .orange-btn > span{
     z-index: 2;
 }
 
 .orange-btn:hover{
+    border: none;
     color: var(--primary-color);
 }
 

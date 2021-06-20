@@ -8,7 +8,7 @@ import '../../styles/Contacto/ContactoInfo.css';
 import '../../styles/Icon.css';
 
 //Iconos
-import { FaFacebookF, FaTwitter, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, /*FaPhoneAlt*/ } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 //Imagenes
@@ -33,21 +33,29 @@ const ContactoInfo = () => {
                     No dudes en consultarnos y enviarnos tus dudas y las resolveremos, puedes contactarnos llenando el formulario o ya sea vía llamada telefónica, al whatsapp o en nuestras redes sociales.
                 </p>
                 <div className="contacto-info">
-                    <div
+                    {/* <div
                         className={`contacto-info-item ${fadeInUp}`}
                         style={{opacity: opacity}}
                     >
                         <FaPhoneAlt className="contact-icon phoneIcon"/>
                         <span>:</span>
-                        <span>777 12345</span>
-                    </div>
+                        <span>
+                            777 12345 <br/>
+                            777 12345 <br/>
+                            777 12345
+                        </span>
+                    </div> */}
                     <div
                         className={`contacto-info-item ${fadeInUp}`}
                         style={{opacity: opacity}}
                     >
                         <IoLogoWhatsapp className="contact-icon whatsappIcon"/>
                         <span>:</span>
-                        <span>777 12345</span>
+                        <span>
+                            789-58246<br/>
+                            701-89477<br/>
+                            735-82793
+                        </span>
                     </div>
                     <div className='icons-container'>
                         <div

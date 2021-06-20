@@ -34,6 +34,7 @@
     max-width: 660px;
     font-family: var(--GothamBook-Font);
     font-size: 1.2rem;
+    line-height: 12px;
     text-align: center;
 }
 
@@ -56,5 +57,6 @@
 
     .AboutUs > p {
         font-size: 2rem;
+        line-height: 20px;
     }
 }

@@ -9,21 +9,23 @@ import ImgFumigacionDesinfeccion from '../../assets/static/Ratones-peleando.jpg'
 //Estilos
 import "../../styles/Servicios/ServicioItem.css";
 
-const ServicioItem = () => {
+const ServicioItem = (props) => {
     const refServicioItem = useRef();
-    const {opacity, fadeInUp} = UseFadeIn(refServicioItem);
+    const { opacity, fadeInUp } = UseFadeIn(refServicioItem);
+    const { title, listaServicios } = props.data;
     return(
         <React.Fragment>
-            <div 
+            <div
                 ref={refServicioItem} 
                 className={`ServicioItem ${fadeInUp}`}
                 style={{opacity: opacity}}
             >
                 <img src={ImgFumigacionDesinfeccion} alt=""/>
-                <h2>FUMIGACIÓN Y DESINFECCIÓN</h2>
+                <h2>{title}</h2>
                 <ul>
-                    <li>Con Termonebulizador a humo.</li>
-                    <li>Empresas - Domicilios - Almacenes.</li>
+                    {listaServicios.map( (servicio, index) =>
+                        <li key={index}>{servicio}</li>
+                    )}
                 </ul>
             </div>
         </React.Fragment>
